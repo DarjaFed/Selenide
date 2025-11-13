@@ -7,16 +7,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PositiveTest {
     private WebDriver driver;
 
     @BeforeAll
-    public static void SetupAll() {
+    public static void setupAll() {
         WebDriverManager.chromedriver().setup();
     }
 
@@ -42,10 +44,10 @@ public class PositiveTest {
         driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
         driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
         driver.findElement(By.className("button")).click();
-        String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.cssSelector("[data-test-id = order-success]")).getText().trim();
-        assertEquals(expected, actual);
-
+        WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
+        String actualText = actualElement.getText().trim();
+        assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+        assertTrue(actualElement.isDisplayed());
     }
 }
 
