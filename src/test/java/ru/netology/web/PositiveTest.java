@@ -28,6 +28,7 @@ public class PositiveTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
+        options.setBinary("C:\\Users\\carro\\AppData\\Local\\Chrome\\Application\\chrome.exe");
         driver = new ChromeDriver(options);
         driver.get("http://localhost:7777/");
     }
@@ -40,6 +41,7 @@ public class PositiveTest {
 
     @Test
     public void shouldBeSuccessfulForm() {
+        driver.get("http://localhost:7777/");
         driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова");
         driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
         driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
