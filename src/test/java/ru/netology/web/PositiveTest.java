@@ -28,7 +28,7 @@ public class PositiveTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-
+        options.setBinary("C:\Program Files\Google\Chrome\Application\chrome.exe");
         driver = new ChromeDriver(options);
         driver.get("http://localhost:7777/");
     }

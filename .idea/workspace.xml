@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aec61ca9-4c07-42da-afe9-1416a829d67b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,25 +66,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ChromeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ChromeTest.shouldTestSomething (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.ChromeTest.shouldTestSomething.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.ChromeTest.testValid1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PositiveTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.PositiveTest.shouldBeSuccessfulForm.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Selenide [test].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Selenide/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Selenide&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ChromeTest.executor": "Run",
+    "Gradle.ChromeTest.shouldTestSomething (1).executor": "Debug",
+    "Gradle.ChromeTest.shouldTestSomething.executor": "Debug",
+    "Gradle.ChromeTest.testValid1.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.PositiveTest.executor": "Run",
+    "Gradle.PositiveTest.shouldBeSuccessfulForm.executor": "Run",
+    "Gradle.Selenide [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "D:/Selenide/src/test/java",
+    "last_opened_file_path": "D:/Selenide",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selenide" />
@@ -100,7 +98,7 @@
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PositiveTest.shouldBeSuccessfulForm">
+  <component name="RunManager" selected="Gradle.PositiveTest">
     <configuration name="ChromeTest.shouldTestSomething (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -228,8 +226,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PositiveTest.shouldBeSuccessfulForm" />
         <item itemvalue="Gradle.PositiveTest" />
+        <item itemvalue="Gradle.PositiveTest.shouldBeSuccessfulForm" />
         <item itemvalue="Gradle.Selenide [test]" />
         <item itemvalue="Gradle.ChromeTest.testValid1" />
         <item itemvalue="Gradle.ChromeTest.shouldTestSomething (1)" />
