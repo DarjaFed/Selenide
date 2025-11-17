@@ -73,7 +73,7 @@
     &quot;Gradle.ChromeTest.shouldTestSomething.executor&quot;: &quot;Debug&quot;,
     &quot;Gradle.ChromeTest.testValid1.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PositiveTest.executor&quot;: &quot;Debug&quot;,
     &quot;Gradle.PositiveTest.shouldBeSuccessfulForm.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Selenide [test].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
@@ -98,7 +98,7 @@
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PositiveTest">
+  <component name="RunManager" selected="Gradle.PositiveTest.shouldBeSuccessfulForm">
     <configuration name="ChromeTest.shouldTestSomething (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -226,8 +226,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PositiveTest" />
         <item itemvalue="Gradle.PositiveTest.shouldBeSuccessfulForm" />
+        <item itemvalue="Gradle.PositiveTest" />
         <item itemvalue="Gradle.Selenide [test]" />
         <item itemvalue="Gradle.ChromeTest.testValid1" />
         <item itemvalue="Gradle.ChromeTest.shouldTestSomething (1)" />
