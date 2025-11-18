@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec61ca9-4c07-42da-afe9-1416a829d67b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +78,8 @@
     "Gradle.NegativeTest.shouldEmptyNameField.executor": "Run",
     "Gradle.NegativeTest.shouldEmptyNameField3.executor": "Run",
     "Gradle.NegativeTest.shouldLessElevenCharactersInPhone.executor": "Run",
+    "Gradle.NegativeTest.shouldMoreElevenCharactersInPhone.executor": "Run",
+    "Gradle.NegativeTest.shouldPhoneWithoutPlusSymbol.executor": "Run",
     "Gradle.PositiveTest.executor": "Run",
     "Gradle.PositiveTest.shouldBeSuccessfulForm.executor": "Run",
     "Gradle.PositiveTest.shouldBeСorrectNameInput.executor": "Run",
@@ -107,7 +107,7 @@
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.NegativeTest.shouldLessElevenCharactersInPhone">
+  <component name="RunManager" selected="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput">
     <configuration name="NegativeTest.shouldBeFailledIncorrectNameInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -122,30 +122,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ru.netology.web.NegativeTest.shouldBeFailledIncorrectNameInput&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="NegativeTest.shouldBeSuccessfulForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.netology.web.NegativeTest.shouldBeSuccessfulForm&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,30 +156,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="NegativeTest.shouldEmptyNameField3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.netology.web.NegativeTest.shouldEmptyNameField3&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="NegativeTest.shouldLessElevenCharactersInPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -228,20 +180,68 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="NegativeTest.shouldMoreElevenCharactersInPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldMoreElevenCharactersInPhone&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="NegativeTest.shouldPhoneWithoutPlusSymbol" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldPhoneWithoutPlusSymbol&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput" />
-      <item itemvalue="Gradle.NegativeTest.shouldBeSuccessfulForm" />
       <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField" />
-      <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField3" />
       <item itemvalue="Gradle.NegativeTest.shouldLessElevenCharactersInPhone" />
+      <item itemvalue="Gradle.NegativeTest.shouldMoreElevenCharactersInPhone" />
+      <item itemvalue="Gradle.NegativeTest.shouldPhoneWithoutPlusSymbol" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput" />
+        <item itemvalue="Gradle.NegativeTest.shouldMoreElevenCharactersInPhone" />
+        <item itemvalue="Gradle.NegativeTest.shouldPhoneWithoutPlusSymbol" />
         <item itemvalue="Gradle.NegativeTest.shouldLessElevenCharactersInPhone" />
         <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField" />
-        <item itemvalue="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput" />
-        <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField3" />
-        <item itemvalue="Gradle.NegativeTest.shouldBeSuccessfulForm" />
       </list>
     </recent_temporary>
   </component>

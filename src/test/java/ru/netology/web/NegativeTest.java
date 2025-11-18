@@ -7,12 +7,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class NegativeTest {
     private WebDriver driver;
@@ -40,13 +40,13 @@ public class NegativeTest {
     }
 
     @Test
-    public void shouldBeFailledIncorrectNameInput() {
-        driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Alina Drobova");
+    public void shouldFailledIncorrectNameInput() {
+        driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Ree Tee");
         driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
         driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
         driver.findElement(By.className("button")).click();
         String text = driver.findElement(By.cssSelector("[data-test-id=name].input_invalid .input__sub")).getText();
-        assertEquals("Имя и Фамилия указаны неверно. Допустимы только русские буквы, пробелы и дефисы.", text.trim());
+        assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", text.trim());
 
     }
 
@@ -58,7 +58,7 @@ public class NegativeTest {
         driver.findElement(By.className("button")).click();
 
         String text = driver.findElement(By.cssSelector("[data-test-id=name].input_invalid .input__sub")).getText();
-        assertEquals("Имя и Фамилия указаны неверно. Допустимы только русские буквы, пробелы и дефисы.", text.trim());
+        assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", text.trim());
     }
 
     @Test
