@@ -30,7 +30,7 @@ public class PositiveTest {
         options.addArguments("--headless");
         options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
         driver = new ChromeDriver(options);
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
     }
 
     @AfterEach
@@ -39,16 +39,28 @@ public class PositiveTest {
         driver = null;
     }
 
-    @Test
-    public void shouldBeSuccessfulForm() {
-        driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова");
-        driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
-        driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
-        driver.findElement(By.className("button")).click();
-        WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
-        String actualText = actualElement.getText().trim();
-        assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
-        assertTrue(actualElement.isDisplayed());
-    }
+
+@Test
+public void shouldBeSuccessfulForm() {
+    driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова");
+    driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
+    driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
+    driver.findElement(By.className("button")).click();
+    WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
+    String actualText = actualElement.getText().trim();
+    assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+    assertTrue(actualElement.isDisplayed());
 }
 
+@Test
+public void shouldHypenInNameField() {
+    driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова-Малинина");
+    driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
+    driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
+    driver.findElement(By.className("button")).click();
+    WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
+    String actualText = actualElement.getText().trim();
+    assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+    assertTrue(actualElement.isDisplayed());
+    }
+}

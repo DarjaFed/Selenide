@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec61ca9-4c07-42da-afe9-1416a829d67b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,25 +68,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ChromeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ChromeTest.shouldTestSomething (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.ChromeTest.shouldTestSomething.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.ChromeTest.testValid1.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PositiveTest.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.PositiveTest.shouldBeSuccessfulForm.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Selenide [test].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/Selenide/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Selenide&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ChromeTest.executor": "Run",
+    "Gradle.ChromeTest.shouldTestSomething (1).executor": "Debug",
+    "Gradle.ChromeTest.shouldTestSomething.executor": "Debug",
+    "Gradle.ChromeTest.testValid1.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.NegativeTest.shouldBeFailledIncorrectNameInput.executor": "Run",
+    "Gradle.NegativeTest.shouldBeSuccessfulForm.executor": "Debug",
+    "Gradle.NegativeTest.shouldEmptyNameField.executor": "Run",
+    "Gradle.NegativeTest.shouldEmptyNameField3.executor": "Run",
+    "Gradle.NegativeTest.shouldLessElevenCharactersInPhone.executor": "Run",
+    "Gradle.PositiveTest.executor": "Run",
+    "Gradle.PositiveTest.shouldBeSuccessfulForm.executor": "Run",
+    "Gradle.PositiveTest.shouldBeСorrectNameInput.executor": "Run",
+    "Gradle.PositiveTest.shouldHypenInNameField.executor": "Run",
+    "Gradle.Selenide [test].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "D:/Selenide/src/test/java",
+    "last_opened_file_path": "D:/Selenide",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Selenide" />
@@ -98,8 +107,8 @@
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PositiveTest.shouldBeSuccessfulForm">
-    <configuration name="ChromeTest.shouldTestSomething (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.NegativeTest.shouldLessElevenCharactersInPhone">
+    <configuration name="NegativeTest.shouldBeFailledIncorrectNameInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +121,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ChromeTest.shouldTestSomething&quot;" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldBeFailledIncorrectNameInput&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +132,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ChromeTest.testValid1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NegativeTest.shouldBeSuccessfulForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ChromeTest.testValid1&quot;" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldBeSuccessfulForm&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +156,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NegativeTest.shouldEmptyNameField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.netology.web.PositiveTest&quot;" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldEmptyNameField&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +180,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PositiveTest.shouldBeSuccessfulForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NegativeTest.shouldEmptyNameField3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.netology.web.PositiveTest.shouldBeSuccessfulForm&quot;" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldEmptyNameField3&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,7 +204,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Selenide [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NegativeTest.shouldLessElevenCharactersInPhone" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -206,31 +215,33 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.web.NegativeTest.shouldLessElevenCharactersInPhone&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ChromeTest.shouldTestSomething (1)" />
-      <item itemvalue="Gradle.ChromeTest.testValid1" />
-      <item itemvalue="Gradle.PositiveTest" />
-      <item itemvalue="Gradle.PositiveTest.shouldBeSuccessfulForm" />
-      <item itemvalue="Gradle.Selenide [test]" />
+      <item itemvalue="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput" />
+      <item itemvalue="Gradle.NegativeTest.shouldBeSuccessfulForm" />
+      <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField" />
+      <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField3" />
+      <item itemvalue="Gradle.NegativeTest.shouldLessElevenCharactersInPhone" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PositiveTest.shouldBeSuccessfulForm" />
-        <item itemvalue="Gradle.PositiveTest" />
-        <item itemvalue="Gradle.Selenide [test]" />
-        <item itemvalue="Gradle.ChromeTest.testValid1" />
-        <item itemvalue="Gradle.ChromeTest.shouldTestSomething (1)" />
+        <item itemvalue="Gradle.NegativeTest.shouldLessElevenCharactersInPhone" />
+        <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField" />
+        <item itemvalue="Gradle.NegativeTest.shouldBeFailledIncorrectNameInput" />
+        <item itemvalue="Gradle.NegativeTest.shouldEmptyNameField3" />
+        <item itemvalue="Gradle.NegativeTest.shouldBeSuccessfulForm" />
       </list>
     </recent_temporary>
   </component>
