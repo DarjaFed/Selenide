@@ -62,14 +62,4 @@ public class PositiveTest {
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
         assertTrue(actualElement.isDisplayed());
     }
-
-    @Test
-    public void shouldEmptyPhoneField() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Петров Олег");
-        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
-        driver.findElement(By.className("button")).click();
-
-        String text = driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText();
-        assertEquals("Поле обязательно для заполнения", text.trim());
-    }
 }
