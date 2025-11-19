@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec61ca9-4c07-42da-afe9-1416a829d67b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/NegativeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/web/PositiveTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="aec61ca9-4c07-42da-afe9-1416a829d67b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +82,7 @@
     "Gradle.PositiveTest.executor": "Run",
     "Gradle.PositiveTest.shouldBeSuccessfulForm.executor": "Run",
     "Gradle.PositiveTest.shouldBeСorrectNameInput.executor": "Run",
+    "Gradle.PositiveTest.shouldEmptyPhoneField.executor": "Run",
     "Gradle.PositiveTest.shouldHypenInNameField.executor": "Run",
     "Gradle.Selenide [test].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
