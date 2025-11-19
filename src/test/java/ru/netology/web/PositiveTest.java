@@ -28,7 +28,6 @@ public class PositiveTest {
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
         options.addArguments("--headless");
-        options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
         driver = new ChromeDriver(options);
         driver.get("http://localhost:9999/");
     }
@@ -40,27 +39,37 @@ public class PositiveTest {
     }
 
 
-@Test
-public void shouldBeSuccessfulForm() {
-    driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова");
-    driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
-    driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
-    driver.findElement(By.className("button")).click();
-    WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
-    String actualText = actualElement.getText().trim();
-    assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
-    assertTrue(actualElement.isDisplayed());
-}
+    @Test
+    public void shouldBeSuccessfulForm() {
+        driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова");
+        driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
+        driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
+        driver.findElement(By.className("button")).click();
+        WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
+        String actualText = actualElement.getText().trim();
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+        assertTrue(actualElement.isDisplayed());
+    }
 
-@Test
-public void shouldHypenInNameField() {
-    driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова-Малинина");
-    driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
-    driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
-    driver.findElement(By.className("button")).click();
-    WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
-    String actualText = actualElement.getText().trim();
-    assertEquals( "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
-    assertTrue(actualElement.isDisplayed());
+    @Test
+    public void shouldHypenInNameField() {
+        driver.findElement(By.cssSelector("[data-test-id ='name'] input")).sendKeys("Алина Дробова-Малинина");
+        driver.findElement(By.cssSelector("[data-test-id ='phone'] input")).sendKeys("+79151234567");
+        driver.findElement(By.cssSelector("[data-test-id ='agreement']")).click();
+        driver.findElement(By.className("button")).click();
+        WebElement actualElement = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
+        String actualText = actualElement.getText().trim();
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
+        assertTrue(actualElement.isDisplayed());
+    }
+
+    @Test
+    public void shouldEmptyPhoneField() {
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Петров Олег");
+        driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
+        driver.findElement(By.className("button")).click();
+
+        String text = driver.findElement(By.cssSelector("[data-test-id=phone].input_invalid .input__sub")).getText();
+        assertEquals("Поле обязательно для заполнения", text.trim());
     }
 }
